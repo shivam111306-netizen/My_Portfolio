@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Kuamr - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/222753d73d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.webp" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificate">Certification</a></li>
+                    <li><a href="#my-work">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer • Python</p>
+                <h1>Hi, I am <span>Shivam Kumar.</span> </h1>
+                <div class="download">
+                    <a class="cv-btn" href="Images/Work/Shivam_Kumar_Resume.pdf" download="">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="Images/1759828946980.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Shivam Kumar — a passionate Front-End developer, and Coder who loves
+                        creating visually appealing and functional digital experiences. I enjoy blending design and
+                        logic to build responsive, user-centered websites. <br> <br>
+
+                        I'm currently pursuing my Bachelor’s degree in Information Technology from Rajshree Institute of
+                        Mangement and Technology, where I’m constantly exploring
+                        new technologies and improving my problem-solving skills.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br> Designing Front-End, Web Designing </li>
+                            <li><span>Blender</span> <br> Designing 3D Models</li>
+                            <li><span>Language</span> <br>HTML <br> CSS <br> JavaScript <br> Python </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1 Year</span> <br> Blender,3D modling </li>
+                            <li><span>2 Year</span> <br> Python</li>
+                            <li><span>6 Months</span> <br>Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-Current</span> <br> B.tech From Rajshree Institute of Management anf
+                                Technology</li>
+                            <li><span>2024</span> <br> 12TH From Kendriya Vidyalaya,N.E.R.</li>
+                            <li><span>2022</span> <br>10th From Kendriya Vidyalaya,N.E.R.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certification <span id="Sample">(Sample)</span></h1>
+            <div class="certificate-list">
+
+                <div class="certificate-item">
+                    <img src="Images/Certificate/Black and Gold Modern Elegant Certificate of Achievement .png" alt="">
+                    <h1>Certificate 1</h1>
+                    <a href="#" class="view-btn"
+                        data-img="Images/Certificate/Black and Gold Modern Elegant Certificate of Achievement .png">View</a>
+                </div>
+
+                <div class="certificate-item">
+                    <img src="Images/Certificate/Blue And White Modern Cerificate.png" alt="">
+                    <h1>Certificate 2</h1>
+                    <a href="#" class="view-btn" data-img="Images/Certificate/Blue And White Modern Cerificate.png">View</a>
+                </div>
+
+                <div class="certificate-item">
+                    <img src="Images/Certificate/Blue Green Modern Web Programming Course Completion Certificate.png" alt="">
+                    <h1>Certificate 3</h1>
+                    <a href="#" class="view-btn"
+                        data-img="Images/Certificate/Blue Green Modern Web Programming Course Completion Certificate.png">View</a>
+                </div>
+
+                <div class="certificate-item">
+                    <img src="Images/Certificate/White and Blue Modern Appreciation Certificate.png" alt="">
+                    <h1>Certificate 4</h1>
+                    <a href="#" class="view-btn"
+                        data-img="Images/Certificate/White and Blue Modern Appreciation Certificate.png">View</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <img id="popup-img" src="" alt="Certificate">
+    </div>
+
+
+    <div id="my-work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Work/Work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>A responsive Netflix clone built using HTML, CSS, and JavaScript. It features a sleek UI,
+                            movie sliders, and hover animations for an authentic streaming experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Work/Work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>A sleek Spotify clone built with HTML, CSS, and JavaScript. It includes a music player,
+                            playlist UI, and smooth animations for a real Spotify-like experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Work/Work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A lightweight calculator built with HTML, CSS, and JavaScript.
+                            Supports basic arithmetic, keyboard input, and a responsive layout for mobile and desktop.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+
+
+
+        <div id="contact">
+            <div class="contact-bg">
+                <div class="row-2">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="details">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i></a>Shivam111306@gmail.com</li>
+                                <li><a href="#"><i class="fa-solid fa-phone-volume"></i></a>+91 9058019592</li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a>Instagram</li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a>Linkedin</li>
+                                <li><a href="#"><i class="fa-brands fa-github"></i></a> Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="sub-btn" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <p>By Shivam Kumar, Made with <i class="fa-solid fa-heart"></i></p>
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
